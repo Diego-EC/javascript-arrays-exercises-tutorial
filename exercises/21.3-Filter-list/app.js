@@ -1,5 +1,14 @@
 let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan','Sophia','Benjamin','Mia','Mason','Charlotte','Elijah','Amelia','Oliver','Evelyn','Jacob','Abigail','Lucas','Harper','Michael','Emily','Alexander','Elizabeth','Ethan','Avery','Daniel','Sofia','Matthew','Ella','Aiden','Madison','Henry','Scarlett','Joseph','Victoria','Jackson','Aria','Samuel','Grace','Sebastian','Chloe','David','Camila','Carter','Penelope','Wyatt','Riley'];
 
 //declare your function here
+function filterByName(inputArray, filteringString){
+    let filteredArray = [];
+    inputArray.filter(function(item){
+        if (item.includes(filteringString, 1)) {
+            filteredArray.push(item);
+        }
+    });
+    return filteredArray;
+}
 
 console.log(filterByName(names, 'am'));

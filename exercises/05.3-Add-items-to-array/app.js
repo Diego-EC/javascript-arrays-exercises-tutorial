@@ -7,5 +7,7 @@ var arr = [4,5,734,43,45];
 //         your loop content here   
 // }
 //*****************
-
+for (let index = 0; index < 10; index++) {
+    arr.push(Math.floor(Math.random() * 101));
+}
 console.log(arr);
